@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #FCFDFC;
+  color: #5B5A5B;
+}
+.text-center{
+  text-align: center;
+}
+
+.title h1{
+  font-size: 3em;
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-list{
+  border-top: 1px solid #F7B9CC;
+  border-bottom: 1px solid #F7B9CC;
+}
+
+.nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+.nav-list li {
+  list-style-type: none;
+}
+.nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  color: #5B5A5B;
+}
+.nav-list li:hover a {
+  background-color: #f7b9cc2d;
+  color: #faa8c1;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+.content{
+  flex: 4;
+} 
+aside{
+flex: 2;
+}
+
+aside h1{
+  font-size: 2.5em;
+  color: #faa8c1;
+}
+
+.content-img{
+  width: 100%;
+}
+
+.discover{
+  padding: 0 1em 1em 1em;
+  position: sticky;
+  top: 0;
+}
+
+.second-content{
+  display: flex;
+  justify-content: center;
+  padding: 1em 0.5em;
+  gap: 1em;
+}
+
+.product{
+  width: 25%;
+  padding-bottom: 10px;
+  border: 4px solid #F7B9CC;
+  border-radius: 5px 5px 0 0 ;
+  box-shadow: 1px 1px 10px 3px #F7B9CC;
+}
+
+.product-caption{
+  padding-left: 0.5em;
+}
+
+.title-product{
+  height: 1.5em;
+}
+
+.buy-now{
+  padding: 5px 10px;
+  color: #5B5A5B;
+  border-radius: 5px;
+  border: 1px solid #faa8c1;
+  background-color: #f7b9cc50;
+}
+
+.buy-now:hover{
+  padding: 5px 10px;
+  color: #fefefe;
+  background-color: #F7B9CC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta{
+  font-size: x-large;
+  padding: 5px 10px;
+  color: #5B5A5B;
+  border-radius: 5px;
+  border: 1px solid #faa8c1;
+  background-color: #f7b9cc50;
+}
+
+.cta:hover{
+  padding: 5px 10px;
+  color: #fefefe;
+  background-color: #F7B9CC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title-row{
+  padding-left: 1em;
+}
+
+.owner-content{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  gap: 1rem;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 3px #F7B9CC;
+}
+
+.owner-img{
+  width: 15em;
+  height: auto;
+}
+
+.owner-photo{
+  flex: 2;
+}
+
+.owner-bio{
+  flex: 4;
+  padding: 1em;
+}
+.logo-container{
+  text-align: center;
+}
+.logo{
+  max-width: 50%;
+  margin: auto;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #F7B9CC;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .second-content{
+    flex-wrap: wrap;
+  }
+  .product{
+    width: 90%;
+  }  
+}
