@@ -132,9 +132,9 @@ function addBook() {
   const title = document.getElementById('inputBookTitle').value;
   const author = document.getElementById('inputBookAuthor').value;
   const year = document.getElementById('inputBookYear').value;
-  const checkRead = document.getElementById('inputBookIsComplete').value;
+  const checkRead = document.getElementById('inputBookIsComplete');
   let checkReadValue 
-  if(checkRead == 'on'){
+  if(checkRead.checked){
     checkReadValue = true
   }else{
     checkReadValue = false
@@ -206,6 +206,7 @@ document.addEventListener(RENDER_EVENT, function () {
 
   for (const bookItem of books) {
     const bookElement = makeBook(bookItem);
+    console.log(bookItem)
     if (bookItem.isCompleted) {
       listCompleted.append(bookElement);
     } else {
