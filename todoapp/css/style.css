@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -8,7 +8,6 @@ html, body {
     font-family: Raleway, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -25,22 +24,22 @@ header {
 
 .wrapper .container {
     width: 1024px;
-    border-radius: 8px;
-    margin: 16px;
-    background: #F8F9FA;
-    padding: 16px;
-    flex-grow: 1;
     height: fit-content;
+    background: #F8F9FA;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    flex-grow: 1;
 }
 
-
 .item {
-    border-radius: 16px;
-    margin-top: 16px;
-    padding: 12px 24px 12px 24px;
-    background: white;
     display: flex;
     align-items: center;
+
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    border-radius: 16px;
+    background: white;
 }
 
 .item > .inner h2 {
@@ -52,10 +51,11 @@ header {
 }
 
 .form {
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
     border-radius: 16px;
 }
 
@@ -80,21 +80,21 @@ input[type=text], input[type=date] {
     border: 2px solid #9475EA;
     border-radius: 8px;
     padding: 16px;
-    box-sizing: border-box;
     margin-bottom: 8px;
     font-size: 24px;
 }
 
 .btn-submit {
     width: fit-content;
-    font-family: Raleway, sans-serif;
     border-radius: 16px;
-    padding: 12px 24px;
     border: 2px solid #5F30E2;
-    color: black;
-    font-size: 24px;
+    padding: 12px 24px;
     margin-top: auto;
     align-self: flex-end;
+
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    color: black;
     cursor: pointer;
 }
 
@@ -116,11 +116,10 @@ input[type=text], input[type=date], .btn-submit:focus {
 }
 
 .check-button {
-    width: 40px;
-    height: 40px;
-
     background: url('../assets/check-outline.svg');
     background-size: contain;
+    width: 40px;
+    height: 40px;
     margin-left: auto;
     cursor: pointer;
     border: none;
@@ -166,7 +165,6 @@ input[type=text], input[type=date], .btn-submit:focus {
 .check-button:focus, .trash-button {
     outline: none;
 }
-
 
 @media only screen and (max-width: 1024px) {
     .wrapper {
