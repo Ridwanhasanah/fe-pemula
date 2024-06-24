@@ -169,3 +169,18 @@ main {
     background-color: darkred;
     color: white;
 }
+
+.check-button {
+    background: url('assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/check-solid.svg');
+    background-size: contain;
+}

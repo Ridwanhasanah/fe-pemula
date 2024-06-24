@@ -80,7 +80,7 @@ function loadDataFromStorage() {
 
 
 function makeBook(bookObject) {
-  const {id, title, author, year, isCompleted} = bookObject;
+  const { id, title, author, year, isCompleted } = bookObject;
 
   const textTitle = document.createElement('h2');
   textTitle.innerText = title;
@@ -88,13 +88,13 @@ function makeBook(bookObject) {
   const textAuthor = document.createElement('p');
   textAuthor.innerText = author;
 
-  const textYear = document.createElement('p');
+  const textYear = document.createElement('p'); 
   textYear.innerText = year;
 
   const textContainer = document.createElement('div');
   textContainer.classList.add('inner');
-  textContainer.append(textTitle, textAuthor,textYear);
-
+  textContainer.append(textTitle, textAuthor, textYear);
+ 
   const container = document.createElement('div');
   container.classList.add('item', 'shadow')
   container.append(textContainer);
@@ -133,10 +133,10 @@ function addBook() {
   const author = document.getElementById('inputBookAuthor').value;
   const year = document.getElementById('inputBookYear').value;
   const checkRead = document.getElementById('inputBookIsComplete');
-  let checkReadValue 
-  if(checkRead.checked){
+  let checkReadValue
+  if (checkRead.checked) {
     checkReadValue = true
-  }else{
+  } else {
     checkReadValue = false
   }
 
